@@ -1,0 +1,58 @@
+--now 5 videos are on Time Complexity to better understand
+--i am giving this
+look how your code runs is determined by two factors:
+-->processor speed
+-->time Complexity
+as processor is variable its not the determining factor
+so we give Complexity analysis factors
+its of 3 types:
+best case
+worst case
+average case 
+we will deep dive into this later
+for now 
+i would suggest doing excercise 
+and upto i know worst case O[n/logn/K/A**m/fact{A}]
+is the standard rest are theory but anyway i should know them so i suggest not 
+to do shit and read theory deep in this,now i know it's boring but cool
+so now for imp point:
+>worst case Complexity -- > take the worst situtation and analyse
+for ex a loop which goes from 1--n and find the  array sum but
+in best case we have to find 1 numbers thus no of iterations=1;O[1]
+in worst case we have to find n numbers thus no of iterations=n;O[n]
+thus time Complexity=O[n];//this fills the void as in CP i realised that linear time Complexities are not uncommon
+and we actually use them everywhere
+so if you have constraints--->
+like size of Array=10**5
+and then in worst case we have to do 10**5 iterations
+and as per i know the best avg computer can compute = 10**9 iterations
+thus in .5 s -=10**5 iterations
+thus this would compile and run[barely], which is best for us and in the end speed matter no matter
+ how better your computer is but 
+it is not very intuitive to iterate for everynumber
+and thus if you increase size which is barely uncommon in real world
+this program eventually fails so lets take another 
+apporach as we all know array's elemets would be == 1+....+n which an AP of n 
+and sum of AP =n[n+1]/2
+and without any iteration just by knowing the size which is n.
+we can just return the the sum using the formula.
+
+this give the answer in constant O[1] Complexity no matter how big an array is the answer always Complies
+in constant time . this summaries the fact time Complexities  actually gets better using 
+some different apporach and thus comes DSA.
+data structures are just better way of presenting data.
+algorithms are just better and faster way of doing operations on them.
+that's it any code any operation can be formed using basic structures and loops but when we need speed
+SPEED comes from algorithms and this should be our way of apporoaching things when learning DSA
+we need to implement by ourselves learn something new And oh i know something that can be 
+made better using this DS algo some math function and anything
+so what we do is -->
+-->learn soemthing
+-->implement it ourselves
+-->learn something new 
+-->redo the things we have done which can be made better
+this is how we get better right so this should be our apporoach
+now how to 1.find things->start praticing
+HackerRank-->learn the langauge
+always learn it uptil you know how to do basic and focus on One langauge 
+
