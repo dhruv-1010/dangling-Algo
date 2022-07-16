@@ -36,6 +36,58 @@ struct node* deletehead(struct node*head){
     return head;
 
 }
+struct node* deletelast(struct node* head)
+{
+    struct node* p =head;
+    struct node* q =head->next;
+    while(q->next!=NULL){
+        p=p->next;
+        q=q->next;
+    }
+    p->next=NULL;
+    free(q);
+    return head;
+}
+struct node* deleteindex(struct node* head,int index)
+{
+    struct node* p =head;
+    struct node* q =head->next;
+    int i=0;
+    while(i<index-1){
+        p=p->next;
+        q=q->next;
+        i++;
+    }
+    p->next=q->next;
+    q->next=NULL;
+    free(q);
+    return head;
+    // this function doesn't works for the head element deletion but works for other types 
+}
+
+int main(){
+     struct node* head = (struct node*) malloc(sizeof(struct node));
+     struct node* second = (struct node*) malloc(sizeof(struct node));
+     struct node* third = (struct node*) malloc(sizeof(struct node));
+    //  linking nodes
+    head->data=7;
+    head->next=second;
+    // 
+    second->data=9;
+    second->next=third;
+    //
+    third->data=11;
+    third->next=NULL;
+    //  
+    Linkedlist(head);
+    // insertlast(third);
+    head=deleteindex(head,2);
+    Linkedlist(head);
+    // head = insertindexp(head,3,5);
+    // Linkedlist(head);
+    
+     return 0;
+}
 
 // struct node* inserthead(struct node*head){
 //     struct node* ptr = (struct node*)malloc(sizeof(struct node));
@@ -65,26 +117,3 @@ struct node* deletehead(struct node*head){
 //     return head;
     
 // }
-int main(){
-     struct node* head = (struct node*) malloc(sizeof(struct node));
-     struct node* second = (struct node*) malloc(sizeof(struct node));
-     struct node* third = (struct node*) malloc(sizeof(struct node));
-    //  linking nodes
-    head->data=7;
-    head->next=second;
-    // 
-    second->data=9;
-    second->next=third;
-    //
-    third->data=11;
-    third->next=NULL;
-    //  
-    Linkedlist(head);
-    // insertlast(third);
-    head=deletehead(head);
-    Linkedlist(head);
-    // head = insertindexp(head,3,5);
-    // Linkedlist(head);
-    
-     return 0;
-}
