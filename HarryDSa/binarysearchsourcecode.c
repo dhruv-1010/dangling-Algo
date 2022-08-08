@@ -2,9 +2,7 @@
 #include <stdlib.h>
 int main(){
     // plate code
-    int size=5;//choice
-    int low,mid,high;
-    int arr[5] = {0,5,10,15,20};
+    int size=5,low,mid,high,arr[5] = {0,5,10,15,20};
     low=0;
     high=4;
     int element = 5;//depends
