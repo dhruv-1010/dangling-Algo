@@ -1,5 +1,0 @@
-the rest 4 videos are basic explanation of the best case , worst case,avg case analysis
-use mit videos and do excersise, i need nothing more than this to learn it. 
-use jwasham--u know--
-use gfg practice sets thats it i am coming back to it on 15 july again for review.
-
